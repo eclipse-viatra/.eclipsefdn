@@ -2,12 +2,8 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('eclipse-viatra') {
   settings+: {
-    dependabot_security_updates_enabled_for_new_repositories: false,
     description: "",
-    members_can_change_project_visibility: false,
     name: "Viatra project",
-    packages_containers_internal: false,
-    packages_containers_public: false,
     readers_can_create_discussions: true,
     two_factor_requirement: false,
     web_commit_signoff_required: false,
