@@ -2,4 +2,4 @@
 *             @eclipse-viatra/eclipsefdn-releng
 
 # Otterdog related configurations are also owned by the security team.
-/otterdog/**  @eclipse-viatra/eclipsefdn-security @eclipse-viatra/eclipsefdn-releng
+/otterdog/**  @eclipse-viatra/eclipsefdn-security
