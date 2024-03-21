@@ -25,6 +25,19 @@ orgs.newOrg('eclipse-viatra') {
       workflows+: {
         enabled: false,
       },
+      secrets: [
+        orgs.newRepoSecret('SONAR_TOKEN') {
+          value: "pass:bots/modeling.viatra/sonarcloud.io/token-org-eclipse-viatra"
+        },
+      ],
+      variables: [
+        orgs.newRepoVariable('SONAR_CLOUD_ORGANIZATION') {
+          value: "eclipse-viatra",
+        },
+        orgs.newRepoVariable('SONAR_CLOUD_PROJECT_KEY') {
+          value: "eclipse-viatra_org.eclipse.viatra",
+        },
+      ],
     },
     orgs.newRepo('org.eclipse.viatra.examples') {
       allow_merge_commit: true,
