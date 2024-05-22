@@ -65,8 +65,6 @@ orgs.newOrg('eclipse-viatra') {
       default_branch: "master",
       delete_branch_on_merge: false,
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         enabled: false,
