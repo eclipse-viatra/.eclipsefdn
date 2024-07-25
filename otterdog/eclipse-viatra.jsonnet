@@ -10,6 +10,15 @@ orgs.newOrg('eclipse-viatra') {
       default_workflow_permissions: "write",
     },
   },
+  webhooks+: [
+    orgs.newOrgWebhook('https://ci.eclipse.org/viatra/github-webhook/') {
+      content_type: "json",
+      events+: [
+        "pull_request",
+        "push"
+      ],
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('org.eclipse.viatra') {
       allow_merge_commit: true,
