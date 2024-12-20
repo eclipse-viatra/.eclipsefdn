@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-viatra') {
+orgs.newOrg('modeling.viatra', 'eclipse-viatra') {
   settings+: {
     description: "",
     name: "Viatra project",
