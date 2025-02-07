@@ -2,9 +2,12 @@ local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
 orgs.newOrg('modeling.viatra', 'eclipse-viatra') {
   settings+: {
-    description: "",
-    name: "Viatra project",
+    blog: "https://eclipse.dev/viatra"
+    description: "The VIATRA project provides a framework for scalable and reactive model queries and transformations.",
+    name: "Eclipse VIATRA Project",
     web_commit_signoff_required: false,
+    has_discussions: true,
+    discussion_source_repository: "eclipse-viatra/org.eclipse.viatra",
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
       default_workflow_permissions: "write",
