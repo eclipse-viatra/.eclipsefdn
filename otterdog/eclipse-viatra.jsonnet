@@ -37,7 +37,7 @@ orgs.newOrg('modeling.viatra', 'eclipse-viatra') {
       },
       secrets: [
         orgs.newRepoSecret('SONAR_TOKEN') {
-          value: "pass:bots/modeling.viatra/sonarcloud.io/token-org-eclipse-viatra"
+          value: "pass:bots/modeling.viatra/sonarcloud.io/token-org.eclipse.viatra"
         },
       ],
       variables: [
